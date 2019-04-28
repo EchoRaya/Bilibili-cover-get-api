@@ -13,12 +13,11 @@ window.onload = function(){
 						  success:function(result){
 								var reg = /[\s\S]*<\/body>/g;
 								var html = reg.exec(result)[0];
-								var reg2=/\"pic.*\.png\"/;
+								var reg2=/\"pic\"\:\"[a-zA-Z0-9\\\.]+\"\,/;
 								var key=reg2.exec(html)[0];
-								var key1=key.substring(7,key.length-1);
+								var key1=key.substring(7,key.length-2);
 								keystr = eval("'" + key1 + "'");
 								keystr = unescape(keystr.replace(/\u/g, "%u"));
-								////i2.hdslb.com/bfs/archive/191ee87533014f16aa3f32964858c6fb89e9d5de.png
 								iframe.src="http://"+keystr+"";
 							    iframe.style.display="block";
 						  },
@@ -32,4 +31,5 @@ window.onload = function(){
 				}
             }  
         }
+
 
