@@ -1,0 +1,50 @@
+body{
+  margin:0px;
+  padding:0px;
+}
+.box1{
+  width: auto;
+  height: 200px;
+  position: relative;
+}
+
+.box1::after {
+  content: "";
+  background:url("../image/bilibg.jpg") no-repeat;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+.box2{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%)
+}
+
+.av-text, .av-btn{
+	border-radius:10px;
+}
+input{
+	border:0px;
+	outline:none;
+}
+.av-text{
+	width:190px;
+	height:30px;
+	margin-right:20px;
+	padding:0px;
+}
+.av-btn{
+	width:80px;
+	height:30px;
+	padding:0px;
+}
+.showPic{
+	width:100%;
+	display:none;
+}
