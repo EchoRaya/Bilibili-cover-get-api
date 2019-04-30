@@ -10,4 +10,4 @@ catch the cover from the bilibili through av number
 
 ## how to use
 
-*just input the av number of bilibili through the `https://supervbird.github.io/bilibili_cover_get/bili-image-api.html`
+*just input the av number of bilibili through the* `https://supervbird.github.io/Bilibili-cover-get-api/bili-image-api.html`
